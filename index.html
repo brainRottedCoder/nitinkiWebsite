@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battlground Gaming Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+     <!-- locomotion css api -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="main">  
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="/" class="logo">
+                    <!-- <i class="fas fa-bolt"></i> -->
+                     <img id="logophoto" src="/img/logo.jpg" class="" alt="">
+                    <span id="battleLogo" class="neon-text neon-red">BATTLEGROUND</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#games" class="nav-link font-bold">Games</a>
+                    <a href="#booking" class="nav-link font-bold">Booking</a>
+                    <a href="#events" class="nav-link font-bold">Events</a>
+                    <a href="#location" class="nav-link font-bold">Location</a>
+                    <!-- <a href="login.html" class="nav-link font-bold">Login</a> -->
+                </nav>
+
+                <button id="contact" onclick="window.location.href='#location'" class="btn btn-gradient-blue-red">Contact Us</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero heroSection-bg"></div>
+        <div class="hero-content heroSection-bg">
+            <h1 id="holu" class="hero-title">
+                <span class="neon-text neon-red">THE</span><br>
+                <span class="neon-text neon-red ">BATTLEGROUND</span> <br>
+                <span class="neon-text neon-red">GAMEZONE</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Experience next-level gaming with cutting-edge technology and immersive environments
+            </p>
+
+            <div class="hero-buttons">
+                <a  href="#booking" class="btn btn-gradient-pink-purple">Book Now</a>
+                <button class="btn btn-outline-blue">Explore Games</button>
+            </div>
+
+            <a href="#games" class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down bounce"></i>
+            </a>
+        </div>
+        <div class="hero-overlay"></div>
+        <!-- <img src="img/download.jpeg" alt="Gaming VR Background" class="hero-bg"> -->
+    </section>
+    <!-- Games Section -->
+    <section id="games" class="section games-section">
+        <div class="section-bg games-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="neon-text neon-blue">Our Gaming Experiences</span>
+                </h2>
+                <p class="section-subtitle">
+                    Discover our wide range of immersive gaming experiences designed for all ages and skill levels
+                </p>
+            </div>
+
+            <div class="games-grid">
+                
+                <div class="game-card" data-color="purple">
+                    <div class="game-card-image">
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-4.0.3" alt="Console Gaming Lounge">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Play Station 5</h3>
+                        <p class="game-card-description">Comfortable gaming stations with the latest consoles and games for casual and competitive play.</p>
+                        <a href="#booking" class="btn btn-purple">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="game-card" data-color="blue">
+                    <div class="game-card-image">
+                        <img src="placeholder.jpg" alt="Escape Rooms">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Play Station 4</h3>
+                        <p class="game-card-description">Test your problem-solving skills in our themed escape rooms with immersive storylines.</p>
+                        <a href="#booking" class="btn btn-blue">Book Now</a>
+
+                    </div>
+                </div>
+
+                <div class="game-card" data-color="red">
+                    <div class="game-card-image">
+                        <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-4.0.3" alt="Virtual Reality Arena">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content" >
+                        <h3 class="game-card-title">Virtual Reality Arena</h3>
+                        <p class="game-card-description">Step into another world with our cutting-edge VR experiences. Perfect for groups and parties.</p>
+                        <a href="#booking" class="btn btn-red">Book Now</a>
+
+                    </div>
+                </div>
+
+                <div class="game-card" data-color="green">
+                    <div class="game-card-image">
+                        <img src="placeholder.jpg" alt="Laser Tag Combat">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Laser Tag Combat</h3>
+                        <p class="game-card-description">Engage in tactical team battles in our neon-lit arena with state-of-the-art equipment.</p>
+                        <a href="#booking" class="btn btn-green">Book Now</a>
+
+                    </div>
+                </div>
+                
+               
+
+                <div class="game-card" data-color="pink">
+                    <div class="game-card-image">
+                        <img src="placeholder.jpg" alt="Racing Simulators">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Racing Simulators</h3>
+                        <p class="game-card-description">Feel the adrenaline with our professional-grade racing simulators with motion feedback.</p>
+                        <a href="#booking" class="btn btn-pink">Book Now</a>
+
+                    </div>
+                </div>
+
+                <div class="game-card" data-color="yellow">
+                    <div class="game-card-image">
+                        <img src="placeholder.jpg" alt="Arcade Classics">
+                        <div class="game-card-overlay"></div>
+                    </div>
+                    <div class="game-card-content">
+                        <h3 class="game-card-title">Arcade Classics</h3>
+                        <p class="game-card-description">Relive the golden age of gaming with our collection of classic and modern arcade games.</p>
+                        <a href="#booking" class="btn btn-yellow">Book Now</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="section-bg features-bg"></div>
+        <div class="container">
+            <div class="features-grid">
+                <div class="features-image">
+                    <img src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?ixlib=rb-4.0.3" alt="Gaming Features">
+                    <div class="features-image-overlay"></div>
+                </div>
+
+                <div class="features-content">
+                    <h2 class="features-title">
+                        <span class="neon-text neon-pink">Why Choose</span> 
+                        <span class="neon-text neon-green">Battleground Gaming?</span>
+                    </h2>
+
+                    <div class="features-list">
+                        <div class="feature-card neon-border neon-green">
+                            <div class="feature-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h3 class="feature-title">Cutting-Edge Technology</h3>
+                                <p class="feature-description">Experience gaming on the latest hardware with immersive displays and responsive controls.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card neon-border neon-blue">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h3 class="feature-title">Perfect for Groups</h3>
+                                <p class="feature-description">Ideal for birthday parties, corporate events, and team-building activities.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card neon-border neon-pink">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h3 class="feature-title">Competitive Gaming</h3>
+                                <p class="feature-description">Regular tournaments and leaderboards to showcase your skills and win prizes.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card neon-border neon-purple">
+                            <div class="feature-icon">
+                                <i class="fas fa-party-horn"></i>
+                            </div>
+                            <div class="feature-details">
+                                <h3 class="feature-title">Special Events</h3>
+                                <p class="feature-description">Themed nights, game launches, and exclusive member events throughout the year.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section booking-section">
+        <div class="section-bg booking-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="neon-text neon-green">Book Your Gaming Session</span>
+                </h2>
+                <p class="section-subtitle">
+                    Reserve your spot for an unforgettable gaming experience with friends and family
+                </p>
+            </div>
+
+            <div class="booking-grid">
+                <div class="booking-form neon-border neon-green">
+                    <h3 class="booking-form-title">Booking Form</h3>
+
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" placeholder="Your name" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="your@email.com" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="date" id="date" class="form-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-clock"></i>
+                                    <input type="time" id="time" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="people">Number of People</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-users"></i>
+                                    <input type="number" id="people" min="1" placeholder="Number of guests" class="form-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Gaming Experience</label>
+                                <select id="experience" class="form-select">
+                                    <option value="" disabled selected>Select experience</option>
+                                    <option value="vr">Virtual Reality Arena</option>
+                                    <option value="laser">Laser Tag Combat</option>
+                                    <option value="racing">Racing Simulators</option>
+                                    <option value="arcade">Arcade Classics</option>
+                                    <option value="console">Console Gaming Lounge</option>
+                                    <option value="escape">Escape Rooms</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" rows="4" placeholder="Any special requirements or requests" class="form-textarea"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gradient-green-blue btn-full">Book Now</button>
+                    </form>
+                </div>
+
+                <div class="booking-info">
+                    <div class="hours-card neon-border neon-blue">
+                        <h3 class="hours-title">Opening Hours</h3>
+
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">Monday - Thursday</span>
+                                <span class="time">10:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Friday</span>
+                                <span class="time">10:00 AM - 12:00 AM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">9:00 AM - 1:00 AM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">11:00 AM - 10:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="packages-card neon-border neon-pink">
+                        <h3 class="packages-title">Group Packages</h3>
+
+                        <div class="packages-list">
+                            <div class="package-item">
+                                <h4 class="package-name">Birthday Package</h4>
+                                <p class="package-description">Perfect for celebrating birthdays with gaming, food, and dedicated party space.</p>
+                                <div class="package-price">
+                                    <span class="price">$299</span>
+                                    <span class="price-info">/ up to 10 people</span>
+                                </div>
+                            </div>
+
+                            <div class="package-item">
+                                <h4 class="package-name">Corporate Team Building</h4>
+                                <p class="package-description">Strengthen team bonds with collaborative gaming challenges and private space.</p>
+                                <div class="package-price">
+                                    <span class="price">$499</span>
+                                    <span class="price-info">/ up to 20 people</span>
+                                </div>
+                            </div>
+
+                            <div class="package-item">
+                                <h4 class="package-name">VIP Experience</h4>
+                                <p class="package-description">Premium access to all gaming zones with dedicated staff and catering options.</p>
+                                <div class="package-price">
+                                    <span class="price">$799</span>
+                                    <span class="price-info">/ up to 15 people</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="section-bg events-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="neon-text neon-pink">Upcoming Events</span>
+                </h2>
+                <p class="section-subtitle">
+                    Join our special gaming events, tournaments, and themed nights
+                </p>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card pink-event">
+                    <div class="event-image">
+                        <img src="placeholder.jpg" alt="Tournament Event">
+                        <div class="event-overlay"></div>
+                        <div class="event-badge">TOURNAMENT</div>
+                    </div>
+
+                    <div class="event-content">
+                        <h3 class="event-title">Fortnite Championship</h3>
+                        <p class="event-description">Compete against the best players and win exclusive prizes in our monthly tournament.</p>
+
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>June 15, 2023 • 6:00 PM</span>
+                        </div>
+
+                        <button class="btn btn-pink btn-full">Register Now</button>
+                    </div>
+                </div>
+
+                <div class="event-card blue-event">
+                    <div class="event-image">
+                        <img src="placeholder.jpg" alt="Launch Party">
+                        <div class="event-overlay"></div>
+                        <div class="event-badge">LAUNCH PARTY</div>
+                    </div>
+
+                    <div class="event-content">
+                        <h3 class="event-title">Call of Duty: Warzone 2.0</h3>
+                        <p class="event-description">Be among the first to experience the new Warzone map with our exclusive launch event.</p>
+
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>June 22, 2023 • 8:00 PM</span>
+                        </div>
+
+                        <button class="btn btn-blue btn-full">RSVP Now</button>
+                    </div>
+                </div>
+
+                <div class="event-card green-event">
+                    <div class="event-image">
+                        <img src="placeholder.jpg" alt="VR Night">
+                        <div class="event-overlay"></div>
+                        <div class="event-badge">SPECIAL EVENT</div>
+                    </div>
+
+                    <div class="event-content">
+                        <h3 class="event-title">VR After Dark</h3>
+                        <p class="event-description">Adults-only VR gaming night with special challenges and premium drinks included.</p>
+
+                        <div class="event-date">
+                            <i class="fas fa-calendar"></i>
+                            <span>June 30, 2023 • 9:00 PM</span>
+                        </div>
+
+                        <button class="btn btn-green btn-full">Get Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events-more">
+                <button class="btn btn-gradient-pink-purple">View All Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section location-section">
+        <div class="section-bg location-bg"></div>
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info">
+                    <h2 class="location-title">
+                        <span class="neon-text neon-purple">Find Us</span>
+                    </h2>
+
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Our Location</h3>
+                                <p class="info-description">
+                                    Swarna Jayanti nagar,Rmaghat Road<br>
+                                    Aligarh, Uttar Pradesh 202001<br>
+                                    India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Contact Us</h3>
+                                <p class="info-description">
+                                    Phone: +91 98765 43210<br>
+                                    Email: info@BATTLEGROUNDgaming.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3 class="info-title">Opening Hours</h3>
+                                <p class="info-description">
+                                    Tuesday - Sunday: 10:00 AM - 11:00 PM<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3 class="social-title">Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map neon-border neon-purple">
+                    <img src="placeholder.jpg" alt="Location Map">
+                    <div class="map-overlay">
+                        <button class="btn btn-purple">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter-section">
+        <div class="section-bg newsletter-bg"></div>
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">
+                    <span class="neon-text neon-blue">Stay Connected</span>
+                </h2>
+                <p class="newsletter-subtitle">
+                    Subscribe to our newsletter for exclusive offers, event updates, and gaming news
+                </p>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" class="newsletter-input">
+                    <button type="submit" class="btn btn-gradient-blue-purple">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span class="neon-text neon-green">BATTLEGROUND</span>
+                    </a>
+                    <p class="footer-description">
+                        The ultimate gaming destination with cutting-edge technology and immersive experiences for gamers of all levels.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Gaming Experiences</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Virtual Reality</a></li>
+                        <li><a href="#">Laser Tag</a></li>
+                        <li><a href="#">Racing Simulators</a></li>
+                        <li><a href="#">Arcade Games</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                123 Gaming Street, Tech District<br>
+                                Noida, Uttar Pradesh 201301
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@BATTLEGROUNDgaming.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="current-year"></span> BATTLEGROUND Gaming Zone. All rights reserved.
+                </p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- locomotive scroll js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
